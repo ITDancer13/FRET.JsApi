@@ -43,5 +43,5 @@ public class JsApiCallResult
     /// <summary>
     /// Default success instance.
     /// </summary>
-    internal static JsApiCallResult Success { get; } = new();
+    public static JsApiCallResult Success { get; } = new();
 }
