@@ -34,6 +34,15 @@ public static class Constants
     /// Call `await CefSharp.BindObjectAsync("fretPlayer1")` to bind.
     /// </remarks>
     public const string LoginManager = "fretLoginManager";
+    
+    /// <summary>
+    /// Object name of the login manager in FRET.
+    /// Used interface of this object: <see cref="IFretEnvironmentAdaptor"/>.
+    /// </summary>
+    /// <remarks>
+    /// Call `await CefSharp.BindObjectAsync("fretEnvironment")` to bind.
+    /// </remarks>
+    public const string Environment = "fretEnvironment";
 
     /// <summary>
     /// Name of the event which is sent whenever the status of a player has been changed.
