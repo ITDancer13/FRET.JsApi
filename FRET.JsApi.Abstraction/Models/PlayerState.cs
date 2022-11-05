@@ -5,7 +5,7 @@ namespace FRET.JsApi.Abstraction.Models;
 /// <summary>
 /// Representation of a player state.
 /// </summary>
-public class JsApiPlayerState
+public class PlayerState
 {
     /// <summary>
     /// Internal state of the player.

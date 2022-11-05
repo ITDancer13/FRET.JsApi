@@ -6,7 +6,7 @@ namespace FRET.JsApi.Abstraction.Interfaces;
 /// <summary>
 /// Interface to access information about FRET Hosting Environment.
 /// </summary>
-public interface IJsApiFretEnvironmentWrapper
+public interface IFretEnvironmentWrapper
 {
     /// <summary>
     /// Provides information about FRET Hosting Environment.
