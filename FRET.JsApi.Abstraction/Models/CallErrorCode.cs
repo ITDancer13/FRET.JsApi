@@ -1,9 +1,9 @@
 ﻿namespace FRET.JsApi.Abstraction.Models;
 
 /// <summary>
-/// Enumeration of all possible technical error codes used in <see cref="JsApiCallResult"/>.
+/// Enumeration of all possible technical error codes used in <see cref="CallResult"/>.
 /// </summary>
-public enum JsApiCallErrorCode
+public enum CallErrorCode
 {
     /// <summary>
     /// No error occurred. 

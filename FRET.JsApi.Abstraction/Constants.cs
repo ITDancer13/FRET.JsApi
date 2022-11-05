@@ -37,7 +37,7 @@ public static class Constants
 
     /// <summary>
     /// Name of the event which is sent whenever the status of a player has been changed.
-    /// Used model of this event: <see cref="JsApiPlayerState"/>.
+    /// Used model of this event: <see cref="PlayerState"/>.
     /// </summary>
     /// <remarks>
     /// fretPlayer1StateChanged and fretPlayer2StateChanged will be the actual names.

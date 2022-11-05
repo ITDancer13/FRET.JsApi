@@ -3,7 +3,7 @@
 /// <summary>
 /// Result model which is used for all calls as e.g. Exception handling is unconvenient at this point.
 /// </summary>
-public class JsApiCallResult
+public class CallResult
 {
     /// <summary>
     /// Indictates if the call was successful.
@@ -13,7 +13,7 @@ public class JsApiCallResult
     /// <summary>
     /// Technical error code if the call was not successful.
     /// </summary>
-    public JsApiCallErrorCode ErrorCode { get; }
+    public CallErrorCode ErrorCode { get; }
 
     /// <summary>
     /// Human readable error message if the call was not successful.
@@ -23,7 +23,7 @@ public class JsApiCallResult
     /// <summary>
     /// Public constructor to create a non-success instance.
     /// </summary>
-    public JsApiCallResult(JsApiCallErrorCode errorCode, string errorMessage)
+    public CallResult(CallErrorCode errorCode, string errorMessage)
     {
         IsSuccess = false;
         ErrorCode = errorCode;
@@ -33,15 +33,15 @@ public class JsApiCallResult
     /// <summary>
     /// Private constructor to create success instance.
     /// </summary>
-    private JsApiCallResult()
+    private CallResult()
     {
         IsSuccess = true;
-        ErrorCode = JsApiCallErrorCode.None;
+        ErrorCode = CallErrorCode.None;
         ErrorMessage = string.Empty;
     }
 
     /// <summary>
     /// Default success instance.
     /// </summary>
-    public static JsApiCallResult Success { get; } = new();
+    public static CallResult Success { get; } = new();
 }
