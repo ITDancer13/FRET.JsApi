@@ -1,12 +1,12 @@
 ﻿namespace FRET.JsApi.Abstraction.Models;
 
 /// <summary>
-/// Result model which is used for all calls as e.g. Exception handling is unconvenient at this point.
+/// Result model which is used for all calls as e.g. Exception handling is inconvenient at this point.
 /// </summary>
 public class CallResult
 {
     /// <summary>
-    /// Indictates if the call was successful.
+    /// Indicates if the call was successful.
     /// </summary>
     public bool IsSuccess { get; }
 

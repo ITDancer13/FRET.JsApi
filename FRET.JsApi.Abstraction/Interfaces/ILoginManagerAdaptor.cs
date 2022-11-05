@@ -6,7 +6,7 @@ namespace FRET.JsApi.Abstraction.Interfaces;
 /// <summary>
 /// Interface of FRET login manager.
 /// </summary>
-public interface ILoginManagerWrapper
+public interface ILoginManagerAdaptor
 {
     /// <summary>
     /// Signalized that the given external user was logged in.
@@ -15,8 +15,8 @@ public interface ILoginManagerWrapper
     Task<CallResult> Login(int externalUserId);
     
     /// <summary>
-    /// Sigalizes that the logged in user was logged out.
-    /// FRET logsout the user as well.
+    /// Signalizes that the logged in user was logged out.
+    /// FRET logout the user as well.
     /// </summary>
     Task<CallResult> Logout();
 }
