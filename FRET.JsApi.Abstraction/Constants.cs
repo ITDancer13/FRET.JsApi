@@ -10,7 +10,7 @@ public static class Constants
 {
     /// <summary>
     /// Object name of the first player in FRET.
-    /// Used interface of this object: <see cref="IJsApiPlayerWrapper"/>.
+    /// Used interface of this object: <see cref="IPlayerAdaptor"/>.
     /// </summary>
     /// <remarks>
     /// Call `await CefSharp.BindObjectAsync("fretPlayer1")` to bind.
@@ -19,7 +19,7 @@ public static class Constants
 
     /// <summary>
     /// Object name of the second player in FRET.
-    /// Used interface of this object: <see cref="IJsApiPlayerWrapper"/>.
+    /// Used interface of this object: <see cref="IPlayerAdaptor"/>.
     /// </summary>
     /// <remarks>
     /// Call `await CefSharp.BindObjectAsync("fretPlayer2")` to bind.
@@ -28,7 +28,7 @@ public static class Constants
 
     /// <summary>
     /// Object name of the login manager in FRET.
-    /// Used interface of this object: <see cref="IJsApiLoginManagerWrapper"/>.
+    /// Used interface of this object: <see cref="ILoginManagerAdaptor"/>.
     /// </summary>
     /// <remarks>
     /// Call `await CefSharp.BindObjectAsync("fretPlayer1")` to bind.
@@ -45,7 +45,7 @@ public static class Constants
     public const string PlayerStateChangedEventName = "fretPlayer{0}StateChanged";
 
     /// <summary>
-    /// Name of the event which is sent whenever the user in FRET has been looged out.
+    /// Name of the event which is sent whenever the user in FRET has been logged out.
     /// </summary>
     public const string UserLoggedOutEventName = "fretUserLoggedOut";
 }

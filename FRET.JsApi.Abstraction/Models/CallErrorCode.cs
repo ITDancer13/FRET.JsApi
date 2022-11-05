@@ -13,7 +13,7 @@ public enum CallErrorCode
 
     /// <summary>
     /// Login failed. 
-    /// No specific error defails available.
+    /// No specific error details available.
     /// </summary>
     LoginGenericError,
 
