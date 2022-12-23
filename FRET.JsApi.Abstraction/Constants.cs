@@ -54,6 +54,15 @@ public static class Constants
     public const string PlayerStateChangedEventName = "fretPlayer{0}StateChanged";
 
     /// <summary>
+    /// Name of the event which is sent whenever the playlist of a player has been changed.
+    /// Used model of this event: Array of <see cref="PlaylistItem"/>.
+    /// </summary>
+    /// <remarks>
+    /// fretPlaylist1Changed and fretPlaylist2Changed will be the actual names.
+    /// </remarks>
+    public const string PlaylistChangedEventName = "fretPlaylist{0}Changed";
+
+    /// <summary>
     /// Name of the event which is sent whenever the user in FRET has been logged out.
     /// </summary>
     public const string UserLoggedOutEventName = "fretUserLoggedOut";
