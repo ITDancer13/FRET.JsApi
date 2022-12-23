@@ -24,4 +24,10 @@ public interface IPlayerAdaptor
     /// Stops the player.
     /// </summary>
     Task<CallResult> Stop();
+
+    /// <summary>
+    /// If playing, fades to the next song of the player.
+    /// Loads the next song otherwise.
+    /// </summary>
+    Task<CallResult> Next();
 }

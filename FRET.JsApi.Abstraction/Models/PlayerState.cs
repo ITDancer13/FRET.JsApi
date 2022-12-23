@@ -37,6 +37,14 @@ public class PlayerState
     public string Title { get; set; }
 
     /// <summary>
+    /// Dances linked to the song loaded to the player.
+    /// </summary>
+    /// <remarks>
+    /// Will be null, if player is empty.
+    /// </remarks>
+    public string Dances { get; set; }
+
+    /// <summary>
     /// Length (in seconds) of the song loaded to the player.
     /// </summary>
     /// <remarks>
